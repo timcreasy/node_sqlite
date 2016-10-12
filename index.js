@@ -49,4 +49,19 @@ db.serialize(() => {
             });
             
   });
+
+  const empTbl = new Table({
+    head: ['Name'],
+    style: { compact: true }
+  });
+
+  db.each(
+    `SELECT FirstName || " " || LastName AS "Name"
+    FROM Employee
+    WHERE Employee.Title == "Sales Support Agent";`,
+    (err, emp) => {
+      empTbl.push([emp.Name])
+    }, 
+    () => { console.log(empTbl.toString()) });
+
 db.close();
