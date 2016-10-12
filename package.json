@@ -1,0 +1,14 @@
+{
+  "name": "node_sqlite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "url": "git@github.com:timcreasy/node_sqlite.git",
+    "type": "git"
+  },
+  "author": "Tim Creasy <timcreasy@me.com>",
+  "license": "MIT",
+  "dependencies": {
+    "sqlite3": "^3.1.6"
+  }
+}
