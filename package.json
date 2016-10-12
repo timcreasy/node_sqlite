@@ -9,6 +9,7 @@
   "author": "Tim Creasy <timcreasy@me.com>",
   "license": "MIT",
   "dependencies": {
+    "cli-table": "^0.3.1",
     "sqlite3": "^3.1.6"
   }
 }
